@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="315.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView disable="true" fitHeight="555.0" fitWidth="315.0" focusTraversable="true" layoutX="5.0" layoutY="5.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" x="5.0" y="5.0">
+         <image>
+            <Image url="file:/C:/Users/Admin/IdeaProjects/APproject/e1.jpg" />
+         </image>
+         <effect>
+            <Blend />
+         </effect>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+         <StackPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </StackPane.margin>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="startButton" layoutX="107.0" layoutY="204.0" mnemonicParsing="false" onAction="#startMenu" opacity="0.0" prefHeight="121.0" prefWidth="103.0" text="Button" />
+            <Button fx:id="pauseButton" layoutX="249.0" layoutY="4.0" mnemonicParsing="false" onAction="#instMenu" opacity="0.0" prefHeight="58.0" prefWidth="66.0" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <Glow />
+   </effect>
+</StackPane>
